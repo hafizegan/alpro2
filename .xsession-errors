@@ -1,0 +1,221 @@
+Xsession: X session started for hafizegan at Fri May 16 15:24:38 WIB 2014
+localuser:hafizegan being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:54: Clearlooks configuration option "sunkenmenu" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:55: Clearlooks configuration option "menuitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:56: Clearlooks configuration option "listviewitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:57: Clearlooks configuration option "progressbarstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:54: Clearlooks configuration option "sunkenmenu" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:55: Clearlooks configuration option "menuitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:56: Clearlooks configuration option "listviewitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:57: Clearlooks configuration option "progressbarstyle" is not supported and will be ignored.
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+** Message: applet now removed from the notification area
+** Message: applet now embedded in the notification area
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:54: Clearlooks configuration option "sunkenmenu" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:55: Clearlooks configuration option "menuitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:56: Clearlooks configuration option "listviewitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:57: Clearlooks configuration option "progressbarstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:54: Clearlooks configuration option "sunkenmenu" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:55: Clearlooks configuration option "menuitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:56: Clearlooks configuration option "listviewitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:57: Clearlooks configuration option "progressbarstyle" is not supported and will be ignored.
+
+(pcmanfm:2901): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(pcmanfm:2901): GLib-GIO-CRITICAL **: g_content_type_guess: assertion `data_size != (gsize) -1' failed
+
+(pcmanfm:2901): GLib-GIO-CRITICAL **: g_content_type_guess: assertion `data_size != (gsize) -1' failed
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:54: Clearlooks configuration option "sunkenmenu" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:55: Clearlooks configuration option "menuitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:56: Clearlooks configuration option "listviewitemstyle" is not supported and will be ignored.
+/usr/share/themes/Taqua/gtk-2.0/gtkrc:57: Clearlooks configuration option "progressbarstyle" is not supported and will be ignored.
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:4: Unable to locate image file in pixmap_path: "stock_about.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:5: Unable to locate image file in pixmap_path: "stock_volume.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:7: Unable to locate image file in pixmap_path: "stock_mic.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:8: Unable to locate image file in pixmap_path: "stock_line-in.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:9: Unable to locate image file in pixmap_path: "stock_attach.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:10: Unable to locate image file in pixmap_path: "stock_book.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:11: Unable to locate image file in pixmap_path: "stock_book.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:12: Unable to locate image file in pixmap_path: "stock_book.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:13: Unable to locate image file in pixmap_path: "stock_book.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:16: Unable to locate image file in pixmap_path: "stock_dialog_info.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:17: Unable to locate image file in pixmap_path: "stock_dialog_question.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:18: Unable to locate image file in pixmap_path: "stock_dialog_error.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:19: Unable to locate image file in pixmap_path: "stock_dialog_warning.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:21: Unable to locate image file in pixmap_path: "stock_dnd.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:22: Unable to locate image file in pixmap_path: "stock_dnd_multiple.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:24: Unable to locate image file in pixmap_path: "stock_add.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:26: Unable to locate image file in pixmap_path: "stock_bold.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:27: Unable to locate image file in pixmap_path: "stock_cancel.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:28: Unable to locate image file in pixmap_path: "stock_cdrom.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:29: Unable to locate image file in pixmap_path: "stock_clear.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:30: Unable to locate image file in pixmap_path: "stock_close.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:31: Unable to locate image file in pixmap_path: "stock_convert.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:32: Unable to locate image file in pixmap_path: "stock_copy.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:33: Unable to locate image file in pixmap_path: "stock_cut.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:34: Unable to locate image file in pixmap_path: "stock_delete.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:35: Unable to locate image file in pixmap_path: "stock_execute.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:36: Unable to locate image file in pixmap_path: "stock_find.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:37: Unable to locate image file in pixmap_path: "stock_find-and-replace.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:38: Unable to locate image file in pixmap_path: "stock_floppy.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:39: Unable to locate image file in pixmap_path: "stock_goto-bottom.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:40: Unable to locate image file in pixmap_path: "stock_goto-first.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:41: Unable to locate image file in pixmap_path: "stock_goto-last.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:42: Unable to locate image file in pixmap_path: "stock_goto-top.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:43: Unable to locate image file in pixmap_path: "stock_go-back.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:44: Unable to locate image file in pixmap_path: "stock_go-down.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:45: Unable to locate image file in pixmap_path: "stock_go-forward.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:46: Unable to locate image file in pixmap_path: "stock_go-up.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:47: Unable to locate image file in pixmap_path: "stock_help.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:48: Unable to locate image file in pixmap_path: "stock_home.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:49: Unable to locate image file in pixmap_path: "stock_index.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:50: Unable to locate image file in pixmap_path: "stock_italic.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:52: Unable to locate image file in pixmap_path: "stock_jump-to.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:53: Unable to locate image file in pixmap_path: "stock_justify-center.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:54: Unable to locate image file in pixmap_path: "stock_justify-fill.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:55: Unable to locate image file in pixmap_path: "stock_justify-left.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:56: Unable to locate image file in pixmap_path: "stock_justify-right.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:57: Unable to locate image file in pixmap_path: "stock_missing-image.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:58: Unable to locate image file in pixmap_path: "stock_new.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:59: Unable to locate image file in pixmap_path: "stock_no.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:60: Unable to locate image file in pixmap_path: "stock_ok.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:61: Unable to locate image file in pixmap_path: "stock_open.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:62: Unable to locate image file in pixmap_path: "stock_paste.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:63: Unable to locate image file in pixmap_path: "stock_print.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:64: Unable to locate image file in pixmap_path: "stock_print-preview.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:65: Unable to locate image file in pixmap_path: "stock_preferences.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:66: Unable to locate image file in pixmap_path: "stock_properties.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:67: Unable to locate image file in pixmap_path: "stock_quit.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:68: Unable to locate image file in pixmap_path: "stock_redo.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:69: Unable to locate image file in pixmap_path: "stock_refresh.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:70: Unable to locate image file in pixmap_path: "stock_remove.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:71: Unable to locate image file in pixmap_path: "stock_revert-to-saved.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:72: Unable to locate image file in pixmap_path: "stock_save.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:73: Unable to locate image file in pixmap_path: "stock_save-as.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:74: Unable to locate image file in pixmap_path: "stock_select-color.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:75: Unable to locate image file in pixmap_path: "stock_select-font.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:76: Unable to locate image file in pixmap_path: "stock_sort-ascending.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:77: Unable to locate image file in pixmap_path: "stock_sort-descending.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:78: Unable to locate image file in pixmap_path: "stock_spell-check.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:79: Unable to locate image file in pixmap_path: "stock_stop.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:80: Unable to locate image file in pixmap_path: "stock_strikethrough.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:81: Unable to locate image file in pixmap_path: "stock_undelete.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:82: Unable to locate image file in pixmap_path: "stock_underline.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:83: Unable to locate image file in pixmap_path: "stock_undo.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:84: Unable to locate image file in pixmap_path: "stock_yes.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:85: Unable to locate image file in pixmap_path: "stock_zoom-100.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:86: Unable to locate image file in pixmap_path: "stock_zoom-fit.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:87: Unable to locate image file in pixmap_path: "stock_zoom-in.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:88: Unable to locate image file in pixmap_path: "stock_zoom-out.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:90: Unable to locate image file in pixmap_path: "stock_preferences.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:91: Unable to locate image file in pixmap_path: "stock_preferences.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:93: Unable to locate image file in pixmap_path: "stock_edit.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:94: Unable to locate image file in pixmap_path: "stock_import.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:95: Unable to locate image file in pixmap_path: "stock_export.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:96: Unable to locate image file in pixmap_path: "stock_insert-image.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:97: Unable to locate image file in pixmap_path: "stock_insert-object.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:98: Unable to locate image file in pixmap_path: "stock_insert-table.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:99: Unable to locate image file in pixmap_path: "stock_connect.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:100: Unable to locate image file in pixmap_path: "stock_disconnect.svg"
+/usr/share/themes/Cukoo-spit/gtk-2.0/iconrc:101: Unable to locate image file in pixmap_path: "stock_reset.svg"
+
+(lxappearance:4757): GLib-CRITICAL **: g_key_file_set_string: assertion `string != NULL' failed
+
+(lxappearance:4757): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.5MVVFX': No such file or directory
+
+(lxappearance:4757): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(xarchiver:4802): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.6SO9FX': No such file or directory
+
+(xarchiver:4802): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(xarchiver:4807): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.DJCBGX': No such file or directory
+
+(xarchiver:4807): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+Usage:
+  lxterminal [Options...] - LXTerminal is a terminal emulator
+
+Options:
+  -e, --command=STRING             Execute the argument to this option inside the terminal
+  --geometry=COLUMNSxROWS          Set the terminal's size
+  -l, --loginshell                 Execute login shell
+  -t, -T, --title=STRING           Set the terminal's title
+  --working-directory=DIRECTORY    Set the terminal's working directory
+
+Usage:
+  lxterminal [Options...] - LXTerminal is a terminal emulator
+
+Options:
+  -e, --command=STRING             Execute the argument to this option inside the terminal
+  --geometry=COLUMNSxROWS          Set the terminal's size
+  -l, --loginshell                 Execute login shell
+  -t, -T, --title=STRING           Set the terminal's title
+  --working-directory=DIRECTORY    Set the terminal's working directory
+
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.6792FX': No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.F3D3FX': No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(x-www-browser:5257): libnotify-WARNING **: Failed to connect to proxy
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.K5ZVFX': No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.GARVFX': No such file or directory
+
+(x-www-browser:5257): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(xarchiver:5337): Gtk-WARNING **: Attempting to store changes into `/home/hafizegan/.local/share/recently-used.xbel', but failed: Failed to create file '/home/hafizegan/.local/share/recently-used.xbel.2N22FX': No such file or directory
+
+(xarchiver:5337): Gtk-WARNING **: Attempting to set the permissions of `/home/hafizegan/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(pcmanfm:2901): Gtk-WARNING **: Radio group does not contain an action with value '0'
+Xarchiver 0.5.2svn-r29673 (©)2005-2008 Giuseppe Torelli
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files
+
+(pcmanfm:2901): Gtk-WARNING **: Radio group does not contain an action with value '0'
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: IA__gtk_widget_is_toplevel: assertion `GTK_IS_WIDGET (widget)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: IA__gtk_widget_is_toplevel: assertion `GTK_IS_WIDGET (widget)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-CRITICAL **: _gtk_container_queue_resize: assertion `GTK_IS_CONTAINER (container)' failed
+
+(pcmanfm:2901): GLib-GObject-CRITICAL **: g_object_get_qdata: assertion `G_IS_OBJECT (object)' failed
+
+(pcmanfm:2901): Gtk-WARNING **: Radio group does not contain an action with value '0'

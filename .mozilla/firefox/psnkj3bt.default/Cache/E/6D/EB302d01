@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	  <base href="http://openvpn.net/index.php/access-server/docs/admin-guides/123-how-to-install-openvpn-as-software.html" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="install openvpn-as, install openvpn access server, install openvpn windows, install vpn, windows, how to" />
+  <meta name="description" content="In order to install the Access Server, you will need to download the Access Server package and place it somewhere on the intended server host where an administrator can have access to it.  All of the operations below must be performed as the root user." />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>How to install OpenVPN-AS software?</title>
+  <link href="/templates/telethra/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/modules/mod_roknavmenu/themes/fusion/css/fusion.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_rokajaxsearch/css/rokajaxsearch.css" type="text/css" />
+  <link rel="stylesheet" href="/modules/mod_rokajaxsearch/themes/blue/rokajaxsearch-theme.css" type="text/css" />
+  <style type="text/css">
+
+  </style>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="/modules/mod_roknavmenu/themes/fusion/js/sfhover.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/modules/mod_rokajaxsearch/js/rokajaxsearch.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});window.addEvent((window.webkit) ? 'load' : 'domready', function() {
+				window.rokajaxsearch = new RokAjaxSearch({
+					'results': 'Results',
+					'close': '',
+					'websearch': 0,
+					'blogsearch': 0,
+					'imagesearch': 0,
+					'videosearch': 0,
+					'imagesize': 'MEDIUM',
+					'safesearch': 'MODERATE',
+					'search': 'Search...',
+					'readmore': 'Read more...',
+					'noresults': 'No results',
+					'advsearch': 'Advanced search',
+					'page': 'Page',
+					'page_of': 'of',
+					'searchlink': 'http://openvpn.net/index.php?option=com_search&amp;view=search&amp;tmpl=component',
+					'advsearchlink': 'http://openvpn.net/index.php?option=com_search&amp;view=search',
+					'uribase': 'http://openvpn.net/',
+					'limit': '10',
+					'perpage': '3',
+					'ordering': 'newest',
+					'phrase': 'any',
+					'hidedivs': '',
+					'includelink': 1,
+					'viewall': 'View all results',
+					'estimated': 'estimated',
+					'showestimated': 1,
+					'showpagination': 1,
+					'showcategory': 0,
+					'showreadmore': 1,
+					'showdescription': 1
+				});
+			});
+  </script>
+
+	<link rel="stylesheet" href="/templates/telethra/css/template.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/telethra/css/suckerfish.css" type="text/css" />
+
+<!--[if IE 6]>
+<style type="text/css">
+#header {
+
+	background:url(/templates/telethra/img/ovpntech_logo-s.gif) no-repeat 0 10px;
+}
+</style>	
+<![endif]-->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-3330956-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+<script src="/jquery-1.7.1.min.js"></script>
+<script>
+	jQuery(document).ready(function(){
+		//services
+			$('#sr-text').hide();
+			$('#sl-text').hide();
+			$('#cm-text').hide();
+		$('.sr').hover(function(){
+			$(this).children('div').children('a').css("display","block");
+			servicesHoverTxt('sr');
+		});
+		$('.sr').mouseleave(function(){
+			$(this).children('div').children('a').css("display","none");
+			servicesOutTxt('sr');
+		});
+		
+		//solution
+		$('.sl').hover(function(){
+			$(this).children('div').children('a').css("display","block");
+			servicesHoverTxt('sl');
+		});
+		$('.sl').mouseleave(function(){
+			$(this).children('div').children('a').css("display","none");
+			servicesOutTxt('sl');
+		});
+		
+		//community
+		$('.cm').hover(function(){
+			$(this).children('div').children('a').css("display","block");
+			servicesHoverTxt('cm');
+		});
+		$('.cm').mouseleave(function(){
+			$(this).children('div').children('a').css("display","none");
+			servicesOutTxt('cm');
+		});
+	});
+	
+	function servicesHoverTxt(id){
+		$('#'+id+'-text').show();
+		$('#text-sr').hide();
+	}
+	function servicesOutTxt(id){
+		$('#'+id+'-text').hide();
+		$('#text-sr').show();
+	}
+</script>
+</head>
+
+<body>
+<div id="top">
+
+	<div id="header">
+
+		<div id="h-els">
+			<a class="mainlevel-supernav" style="float:right;margin-right: 5px;" href="/index.php/login.html">Sign in</a><!---->
+
+<div id="OP-Twitter">
+      <div id="OP-Twitter-Left"> Follow us </div>
+      <div id="OP-Twitter-Right"><a target="_blank" title="Follow us on Twitter" href="https://www.twitter.com/#openvpn"><img alt="Follow us on Twitter" src="/templates/telethra/images/OP-twitter.png" /></a></div>
+    </div>	
+</div>	
+					<div class="moduletable-search">
+					<form name="rokajaxsearch" id="rokajaxsearch" class="blue" action="http://openvpn.net/" method="get">
+<div class="rokajaxsearch -search">
+	<div class="roksearch-wrapper">
+		<input id="roksearch_search_str" name="searchword" type="text" class="inputbox" value="Search..." />
+	</div>
+	<input type="hidden" name="searchphrase" value="any"/>
+	<input type="hidden" name="limit" value="100" />
+	<input type="hidden" name="ordering" value="newest" />
+	<input type="hidden" name="view" value="search" />
+	<input type="hidden" name="option" value="com_search" />
+
+	
+	<div id="roksearch_results"></div>
+</div>
+<div id="rokajaxsearch_tmp" style="visibility:hidden;display:none;"></div>
+</form>		</div>
+	
+
+		<div id="h-nav">
+					<div class="moduletable">
+					<div id="horizmenu-surround">
+        <ul class="menutop level1" >
+                            <li class="item855 root" >
+                        <a class="item" href="/"  >
+                    <span>Home</span>
+                </a>
+                                </li>
+                                <li class="item595 parent root" >
+                        <a class="daddy item" href="https://www.privatetunnel.com/index.php?referral=OPENVPN" target="_blank" >
+                    <span>VPN Service</span>
+                </a>
+                                <ul class="level2">
+                                    <li class="item601" >
+                        <a class="item" href="https://www.privatetunnel.com/index.php?referral=OPENVPN" target="_blank" >
+                    <span>Your Private Tunnel to the Internet</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                <li class="item311 parent active root" >
+                        <a class="daddy item" href="/index.php/access-server/overview.html"  >
+                    <span>VPN Solution</span>
+                </a>
+                                <ul class="level2">
+                                    <li class="item467" >
+                        <a class="item" href="/index.php/access-server/overview.html"  >
+                    <span>Overview</span>
+                </a>
+                                </li>
+                                        <li class="item318" >
+                        <a class="item" href="/index.php/access-server/download-openvpn-as-sw.html"  >
+                    <span>Software Packages</span>
+                </a>
+                                </li>
+                                        <li class="item431" >
+                        <a class="item" href="/index.php/access-server/download-openvpn-as-vm.html"  >
+                    <span>Virtual Appliances</span>
+                </a>
+                                </li>
+                                        <li class="item599" >
+                        <a class="item" href="/index.php/access-server/cloudmachines.html"  >
+                    <span>Cloud Machines</span>
+                </a>
+                                </li>
+                                        <li class="item337" >
+                        <a class="item" href="/index.php/access-server/license-key.html?paynow=SALE"  >
+                    <span>Purchase License</span>
+                </a>
+                                </li>
+                                        <li class="item314" >
+                        <a class="item" href="/index.php/access-server/license-key.html"  >
+                    <span>My Licenses</span>
+                </a>
+                                </li>
+                                        <li class="item344" >
+                        <a class="item" href="/index.php/access-server/pricing.html"  >
+                    <span>Pricing</span>
+                </a>
+                                </li>
+                                        <li class="item343 parent active" >
+                        <a class="daddy item" href="/index.php/access-server/docs.html"  >
+                    <span>Documentation</span>
+                </a>
+                                <ul class="level3">
+                                    <li class="item359" >
+                        <a class="item" href="/index.php/access-server/docs/quick-start-guide.html"  >
+                    <span>Quick Start Guide</span>
+                </a>
+                                </li>
+                                        <li class="item746 parent" >
+                        <a class="daddy item" href="/index.php/access-server/docs/admin-guides-sp-859543150.html"  >
+                    <span>HOWTO</span>
+                </a>
+                                <ul class="level4">
+                                    <li class="item897" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-general.html"  >
+                    <span>General</span>
+                </a>
+                                </li>
+                                        <li class="item898" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-installation.html"  >
+                    <span>Installation</span>
+                </a>
+                                </li>
+                                        <li class="item899" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-virtual-platforms.html"  >
+                    <span>Virtual Platforms</span>
+                </a>
+                                </li>
+                                        <li class="item900" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-administration.html"  >
+                    <span>Administration</span>
+                </a>
+                                </li>
+                                        <li class="item901" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-connect-client-configuration.html"  >
+                    <span>Connect Client Configuration</span>
+                </a>
+                                </li>
+                                        <li class="item902" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-authentication.html"  >
+                    <span>Authentication</span>
+                </a>
+                                </li>
+                                        <li class="item903" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-commands.html"  >
+                    <span>Commands</span>
+                </a>
+                                </li>
+                                        <li class="item904" >
+                        <a class="item" href="/index.php/access-server/docs/admin-guides-sp-859543150/howto-desktop-client-configuration.html"  >
+                    <span>Desktop Client Configuration</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item360" >
+                        <a class="item" href="/index.php/access-server/docs/videos.html"  >
+                    <span>Videos</span>
+                </a>
+                                </li>
+                                        <li class="item345" >
+                        <a class="item" href="/images/pdf/OpenVPN_Access_Server_Sysadmin_Guide_Rev.pdf" target="_blank" >
+                    <span>Admin Guide</span>
+                </a>
+                                </li>
+                                        <li class="item587" >
+                        <a class="item" href="/images/OpenVPNAccessServerDataSheet.pdf" target="_blank" >
+                    <span>Data Sheet</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item321 parent" >
+                        <a class="daddy item" href="/index.php/access-server/section-faq-openvpn-as.html"  >
+                    <span>FAQ</span>
+                </a>
+                                <ul class="level3">
+                                    <li class="item881" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/server-configuration.html"  >
+                    <span>Server Configuration</span>
+                </a>
+                                </li>
+                                        <li class="item882" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/client-configuration.html"  >
+                    <span>Client Configuration</span>
+                </a>
+                                </li>
+                                        <li class="item883" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/general.html"  >
+                    <span>General</span>
+                </a>
+                                </li>
+                                        <li class="item884" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/licensing.html"  >
+                    <span>Licensing</span>
+                </a>
+                                </li>
+                                        <li class="item885" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/pricing.html"  >
+                    <span>Pricing</span>
+                </a>
+                                </li>
+                                        <li class="item886" >
+                        <a class="item" href="/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html"  >
+                    <span>Virtual Appliance</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item604" >
+                        <a class="item" href="/index.php/access-server/as-advantages.html"  >
+                    <span>Advantages</span>
+                </a>
+                                </li>
+                                        <li class="item920" >
+                        <a class="item" href="/index.php/access-server/heartbleed.html"  >
+                    <span>Heartbleed</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                <li class="item212 parent root" >
+                        <a class="daddy item" href="/index.php/open-source.html"  >
+                    <span>Community</span>
+                </a>
+                                <ul class="level2">
+                                    <li class="item365" >
+                        <a class="item" href="/index.php/open-source/overview.html"  >
+                    <span>Overview</span>
+                </a>
+                                </li>
+                                        <li class="item138" >
+                        <a class="item" href="/index.php/open-source/downloads.html"  >
+                    <span>Downloads</span>
+                </a>
+                                </li>
+                                        <li class="item591" >
+                        <a class="item" href="https://community.openvpn.net/openvpn/wiki/TesterDocumentation"  >
+                    <span>Source Code</span>
+                </a>
+                                </li>
+                                        <li class="item79 parent" >
+                        <a class="daddy item" href="/index.php/open-source/documentation.html"  >
+                    <span>Documentation</span>
+                </a>
+                                <ul class="level3">
+                                    <li class="item95" >
+                        <a class="item" href="/index.php/open-source/documentation/howto.html"  >
+                    <span>HOWTO</span>
+                </a>
+                                </li>
+                                        <li class="item96" >
+                        <a class="item" href="/index.php/open-source/documentation/security-overview.html"  >
+                    <span>Security Overview</span>
+                </a>
+                                </li>
+                                        <li class="item97" >
+                        <a class="item" href="/index.php/open-source/documentation/examples.html"  >
+                    <span>Examples</span>
+                </a>
+                                </li>
+                                        <li class="item98" >
+                        <a class="item" href="/index.php/open-source/documentation/graphical-user-interface.html"  >
+                    <span>Graphical User Interface</span>
+                </a>
+                                </li>
+                                        <li class="item92 parent" >
+                        <a class="daddy item" href="/index.php/open-source/documentation/manuals.html"  >
+                    <span>Manuals</span>
+                </a>
+                                <ul class="level4">
+                                    <li class="item93" >
+                        <a class="item" href="/index.php/open-source/documentation/manuals/openvpn-20x-manpage.html"  >
+                    <span>OpenVPN 2.0.x</span>
+                </a>
+                                </li>
+                                        <li class="item99" >
+                        <a class="item" href="/index.php/open-source/documentation/manuals/openvpn-21.html"  >
+                    <span>OpenVPN 2.1</span>
+                </a>
+                                </li>
+                                        <li class="item917" >
+                        <a class="item" href="https://community.openvpn.net/openvpn/wiki/Openvpn22ManPage"  >
+                    <span>OpenVPN 2.2</span>
+                </a>
+                                </li>
+                                        <li class="item916" >
+                        <a class="item" href="https://community.openvpn.net/openvpn/wiki/Openvpn23ManPage"  >
+                    <span>OpenVPN 2.3</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item100 parent" >
+                        <a class="daddy item" href="/index.php/open-source/documentation/change-log.html"  >
+                    <span>Change Log</span>
+                </a>
+                                <ul class="level4">
+                                    <li class="item101" >
+                        <a class="item" href="/index.php/open-source/documentation/change-log/changelog-20x.html"  >
+                    <span>OpenVPN 2.0.x</span>
+                </a>
+                                </li>
+                                        <li class="item102" >
+                        <a class="item" href="/index.php/open-source/documentation/change-log/changelog-21.html"  >
+                    <span>OpenVPN 2.1</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item94" >
+                        <a class="item" href="/index.php/open-source/documentation/install.html"  >
+                    <span>Installation Notes</span>
+                </a>
+                                </li>
+                                        <li class="item103" >
+                        <a class="item" href="/index.php/open-source/documentation/release-notes.html"  >
+                    <span>Release Notes</span>
+                </a>
+                                </li>
+                                        <li class="item104 parent" >
+                        <a class="daddy item" href="/index.php/open-source/documentation/miscellaneous.html"  >
+                    <span>Miscellaneous</span>
+                </a>
+                                <ul class="level4">
+                                    <li class="item105" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/ethernet-bridging.html"  >
+                    <span>Ethernet Bridging</span>
+                </a>
+                                </li>
+                                        <li class="item106" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/rsa-key-management.html"  >
+                    <span>RSA Key Management</span>
+                </a>
+                                </li>
+                                        <li class="item84" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/mailing-lists.html"  >
+                    <span>Mailing Lists</span>
+                </a>
+                                </li>
+                                        <li class="item85" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/subversion-repository.html"  >
+                    <span>Subversion Repository</span>
+                </a>
+                                </li>
+                                        <li class="item107" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/static-key-mini-howto.html"  >
+                    <span>Static Key Mini-HOWTO</span>
+                </a>
+                                </li>
+                                        <li class="item108" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/management-interface.html"  >
+                    <span>Management Interface</span>
+                </a>
+                                </li>
+                                        <li class="item109" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/porting-notes.html"  >
+                    <span>Porting Notes</span>
+                </a>
+                                </li>
+                                        <li class="item110" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/protocol-compatibility.html"  >
+                    <span>Protocol Compatibility</span>
+                </a>
+                                </li>
+                                        <li class="item116" >
+                        <a class="item" href="/index.php/open-source/documentation/miscellaneous/1xhowto.html"  >
+                    <span>1xHOWTO</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item111" >
+                        <a class="item" href="/index.php/open-source/documentation/non-english.html"  >
+                    <span>Non-English</span>
+                </a>
+                                </li>
+                                        <li class="item125" >
+                        <a class="item" href="/index.php/open-source/documentation/sig.html"  >
+                    <span>File Signatures</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item218" >
+                        <a class="item" href="/index.php/open-source/articles.html"  >
+                    <span>Articles</span>
+                </a>
+                                </li>
+                                        <li class="item363 parent" >
+                        <a class="daddy item" href="/index.php/open-source/faq.html"  >
+                    <span>FAQ</span>
+                </a>
+                                <ul class="level3">
+                                    <li class="item893" >
+                        <a class="item" href="/index.php/open-source/faq/community-software-general.html"  >
+                    <span>General</span>
+                </a>
+                                </li>
+                                        <li class="item894" >
+                        <a class="item" href="/index.php/open-source/faq/community-software-client.html"  >
+                    <span>Client</span>
+                </a>
+                                </li>
+                                        <li class="item895" >
+                        <a class="item" href="/index.php/open-source/faq/community-software-server.html"  >
+                    <span>Server</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                        <li class="item91" >
+                        <a class="item" href="/index.php/open-source/books.html"  >
+                    <span>Books</span>
+                </a>
+                                </li>
+                                        <li class="item421" >
+                        <a class="item" href="https://community.openvpn.net/openvpn" target="_blank" >
+                    <span>Wiki/Tracker</span>
+                </a>
+                                </li>
+                                        <li class="item419" >
+                        <a class="item" href="https://forums.openvpn.net" target="_blank" >
+                    <span>Forums</span>
+                </a>
+                                </li>
+                                        <li class="item593" >
+                        <a class="item" href="https://community.openvpn.net/openvpn/wiki/Contributing"  >
+                    <span>Contributing</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                                <li class="item739 parent root" >
+                        <a class="daddy item" href="/index.php/access-server/overview.html"  >
+                    <span>Downloads</span>
+                </a>
+                                <ul class="level2">
+                                    <li class="item744" >
+                        <a class="item" href="/index.php/access-server/overview.html"  >
+                    <span>Access Server Downloads</span>
+                </a>
+                                </li>
+                                        <li class="item743" >
+                        <a class="item" href="/index.php/download/community-downloads.html"  >
+                    <span>Community Downloads</span>
+                </a>
+                                </li>
+                                    </ul>
+                    </li>
+                        </ul>
+    </div>		</div>
+	
+		</div>
+
+
+	</div>
+	
+</div>
+
+<div id="page">
+	<div id="main">
+
+				<div class="moduletable-exnav">
+					
+<ul class="menu">
+<li class="item-467"><a href="/index.php/access-server/overview.html" >Overview</a></li><li class="item-318"><a href="/index.php/access-server/download-openvpn-as-sw.html" >Software Packages</a></li><li class="item-431"><a href="/index.php/access-server/download-openvpn-as-vm.html" >Virtual Appliances</a></li><li class="item-599"><a href="/index.php/access-server/cloudmachines.html" >Cloud Machines</a></li><li class="item-337"><a href="/index.php/access-server/license-key.html?paynow=SALE" >Purchase License</a></li><li class="item-314"><a href="/index.php/access-server/license-key.html" >My Licenses</a></li><li class="item-344"><a href="/index.php/access-server/pricing.html" >Pricing</a></li><li class="item-343 current active deeper parent"><a href="/index.php/access-server/docs.html" >Documentation</a><ul><li class="item-359"><a href="/index.php/access-server/docs/quick-start-guide.html" >Quick Start Guide</a></li><li class="item-746 parent"><a href="/index.php/access-server/docs/admin-guides-sp-859543150.html" >HOWTO</a></li><li class="item-360"><a href="/index.php/access-server/docs/videos.html" >Videos</a></li><li class="item-345"><a href="/images/pdf/OpenVPN_Access_Server_Sysadmin_Guide_Rev.pdf" target="_blank" >Admin Guide</a></li><li class="item-587"><a href="/images/OpenVPNAccessServerDataSheet.pdf" target="_blank" >Data Sheet</a></li></ul></li><li class="item-321 deeper parent"><a href="/index.php/access-server/section-faq-openvpn-as.html" >FAQ</a><ul><li class="item-881"><a href="/index.php/access-server/section-faq-openvpn-as/server-configuration.html" >Server Configuration</a></li><li class="item-882"><a href="/index.php/access-server/section-faq-openvpn-as/client-configuration.html" >Client Configuration</a></li><li class="item-883"><a href="/index.php/access-server/section-faq-openvpn-as/general.html" >General</a></li><li class="item-884"><a href="/index.php/access-server/section-faq-openvpn-as/licensing.html" >Licensing</a></li><li class="item-885"><a href="/index.php/access-server/section-faq-openvpn-as/pricing.html" >Pricing</a></li><li class="item-886"><a href="/index.php/access-server/section-faq-openvpn-as/virtual-appliance.html" >Virtual Appliance</a></li></ul></li><li class="item-604"><a href="/index.php/access-server/as-advantages.html" >Advantages</a></li><li class="item-920"><a href="/index.php/access-server/heartbleed.html" >Heartbleed</a></li></ul>
+		</div>
+	
+			
+
+		<div id="middle">
+			<div class="item-page">
+	<h1>
+	Documentation	</h1>
+
+
+
+
+
+
+
+
+
+<p class="MsoNormal"><span style="font-size: 10pt; color: #003366;">In order to install the Access Server, you will need to download the Access Server package and place it somewhere on the intended server host where an administrator can have access to it. All of the operations below must be performed as the "root" user.<br /></span></p>
+<h2 class="MsoNormal"><span style="font-size: 10pt; color: #003366;">RHEL/CentOS/Fedora:<br /></span></h2>
+<p class="MsoNormal"><span style="font-size: 10pt; color: #003366;">Download and save the appropriate RPM file. Then go to the directory where you placed the downloaded RPM and enter the following command line, substituting the RPM filename:</span><span style="font-size: 12pt; color: #003366;">&nbsp;</span></p>
+<p><span style="font-family: courier new,courier;"><strong><span style="color: #003366;">rpm -i openvpn-as-2.0.5-Fedora17.x86_64.rpm</span></strong></span><span style="color: #003366;">&nbsp;</span></p>
+<pre>&nbsp;</pre>
+<p class="MsoNormal"><span style="line-height: 115%; font-size: 10pt; color: #003366;">This should successfully install the Access Server package. </span></p>
+<p class="MsoNormal"><span style="line-height: 115%; font-size: 10pt; color: #003366;">Note that if you ever have to remove the Access Server installation, the command to use is:</span></p>
+<p class="MsoNormal" style="padding-left: 30px;"><span style="font-family: courier new,courier;"><strong><span style="line-height: 115%; color: #003366;">rpm -e openvpn-as</span></strong></span><span style="line-height: 115%; color: #003366;">&nbsp;</span></p>
+<p class="MsoNormal" style="padding-left: 30px; text-align: left;"><span style="line-height: 115%; color: #003366;">To upgrade your Access Server package use <strong>rpm -u</strong></span></p>
+<p>&nbsp;</p>
+<h2 class="MsoNormal"><span style="font-size: 10pt; color: #003366;">Ubuntu/Debian:<br /></span></h2>
+<p class="MsoNormal"><span style="font-size: 10pt; color: #003366;">Download and save the appropriate Debian package (.deb) file. Then go to the directory where you placed the downloaded file and enter the following command line, substituting the package filename:</span><span style="font-size: 12pt; color: #003366;">&nbsp;</span></p>
+<p><span style="font-family: courier new,courier;"><strong><span style="color: #003366;">dpkg -i openvpn-as-2.0.5-Ubuntu10.amd_64.deb</span></strong></span><span style="color: #003366;">&nbsp;</span></p>
+<pre>&nbsp;</pre>
+<p class="MsoNormal"><span style="line-height: 115%; font-size: 10pt; color: #003366;">This should successfully install the Access Server package.</span></p>
+<p><span style="line-height: 115%; font-size: 10pt; color: #003366;">Note that if you ever have to remove the Access Server installation, the command to use is:</span></p>
+<p class="MsoNormal" style="padding-left: 30px;"><span style="font-family: courier new,courier;"><strong><span style="line-height: 115%; color: #003366;">dpkg -r openvpn-as<br /></span></strong></span></p>
+<center></center>
+	
+</div>
+
+		        	
+		</div>
+	
+	</div>
+</div>
+<div class="clear"></div>
+<div id="OP-Footer">
+    <div id="OP-Footer-Right">
+      <div id="OP-Footer-link">
+        		<div class="moduletable-supernav">
+					
+<ul class="menu-supernav">
+<li class="item-611"><a href="/index.php/about-menu/about-us.html" >About</a></li><li class="item-749"><a href="/index.php/about-menu/jobs.html" >Jobs</a></li><li class="item-612"><a href="/index.php/the-news/press-releases.html" >News</a></li><li class="item-606"><a href="/index.php/contact-us-sp-989947891.html" >Contact</a></li><li class="item-613"><a href="/index.php/partners-sp-1143994505.html" >Partners</a></li><li class="item-610"><a href="/index.php/support-center-sp-1315631429.html" >Support</a></li><li class="item-913"><a href="/index.php/privacy-policy.html" >Privacy Policy</a></li><li class="item-914"><a href="/index.php/terms-of-use.html" >Terms of Use</a></li></ul>
+		</div>
+	
+      </div>
+    </div>
+    <br/><br/>
+    <div id="OP-Footer-left"  style="float:none">
+      <div id="OP-FooterLeft-link" style="float:none">
+        <ul>
+          <li>&copy; 2002-2014 OpenVPN Technologies, Inc. &nbsp; 
+	  <br/>OpenVPN is a registered trademark of OpenVPN Technologies, Inc</li>
+        </ul>
+      </div>
+    </div>
+    <!--OP footer end-->
+  </div>
+
+
+<!--<div id="footer">
+<jdoc:include type="modules" name="privacy" style="xhtml" >&nbsp;<jdoc:include type="modules" name="terms" style="xhtml" > 
+	<div class="copyright">Copyright © 2002-2014 OpenVPN Technologies, Inc. All Rights Reserved.</div>
+	<div style="float:right;color:blue;font-size:11px;color:#CC6600;font-weight:normal;padding-left:10px;padding-right:10px">
+	    		<div class="moduletable">
+					
+
+<div class="custom"  >
+	<a href="/index.php/access-server/docs.html?id=479">Privacy Policy</a></div>
+		</div>
+	
+	</div>
+	<div style="float:right;color:blue;font-size:11px;color:#CC6600;font-weight:normal;padding-left:10px;padding-right:10px">
+	    		<div class="moduletable">
+					
+
+<div class="custom"  >
+	<a href="/index.php/access-server/docs.html?id=481">Terms of Use</a></div>
+		</div>
+	
+	</div>
+	<div style="float:right;color:blue;font-size:11px;color:#CC6600;font-weight:normal;padding-left:10px;padding-right:10px">
+	    
+	</div>
+	<div style="float:right;color:blue;font-size:11px;color:#CC6600;font-weight:normal;padding-left:10px;padding-right:10px">
+	    		<div class="moduletable">
+					
+
+<div class="custom"  >
+	<a href="/index.php/access-server/docs.html?id=485">Terms of Support</a></div>
+		</div>
+	
+	</div>
+
+</div>
+-->
+<div style="display:none">
+</div>
+
+
+
+
+
+<noscript><strong>JavaScript is currently disabled.</strong>Please enable it for a better experience of <a href="http://2glux.com/projects/jumi">Jumi</a>.</noscript></body>
+</html>
